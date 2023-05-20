@@ -39,9 +39,12 @@ export default function Toolbox({ completedItems, activeItems, backlogItems }) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { completed, active, backlog } = await getChangelogData(
-    process.env.CHANGELOG_DATABASE_ID
-  );
+  // const { completed, active, backlog } = await getChangelogData(
+  //   process.env.CHANGELOG_DATABASE_ID
+  // );
+  const completed = null;
+  const active = null;
+  const backlog = null;
   return {
     props: {
       completedItems: completed,
