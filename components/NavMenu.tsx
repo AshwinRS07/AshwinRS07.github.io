@@ -263,11 +263,11 @@ export function NavMenu({}) {
                 </Link>
               </li>
               <li>
-                <Link href="/community-wall" passHref>
-                  <span className="hover:text-teal-400 dark:hover:text-teal-500">
-                    Community wall
-                  </span>
-                </Link>
+                {/*<Link href="/community-wall" passHref>*/}
+                {/*  <span className="hover:text-teal-400 dark:hover:text-teal-500">*/}
+                {/*    Community wall*/}
+                {/*  </span>*/}
+                {/*</Link>*/}
               </li>
             </ul>
             <div className="pt-6 mt-6 border-t border-gray-200 dark:border-gray-200/10">
