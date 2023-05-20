@@ -364,27 +364,27 @@ const ArticlePage = ({
   );
 };
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = [];
-  const data: any = await getAllArticles(process.env.BLOG_DATABASE_ID);
-
-  data.forEach((result) => {
-    if (result.object === 'page') {
-      paths.push({
-        params: {
-          slug: slugify(
-            result.properties.Name.title[0].plain_text
-          ).toLowerCase()
-        }
-      });
-    }
-  });
-
-  return {
-    paths,
-    fallback: 'blocking'
-  };
-};
+// export const getStaticPaths: GetStaticPaths = async () => {
+//   const paths = [];
+//   const data: any = await getAllArticles(process.env.BLOG_DATABASE_ID);
+//
+//   data.forEach((result) => {
+//     if (result.object === 'page') {
+//       paths.push({
+//         params: {
+//           slug: slugify(
+//             result.properties.Name.title[0].plain_text
+//           ).toLowerCase()
+//         }
+//       });
+//     }
+//   });
+//
+//   return {
+//     paths,
+//     fallback: 'blocking'
+//   };
+// };
 
 export const getStaticProps: GetStaticProps = async ({ params: { slug } }) => {
   let content = [];
