@@ -77,37 +77,37 @@ export default function Talks({ talks }) {
                       </th>
                     </tr>
                   </thead>
-                  <tbody className="bg-white divide-y divide-gray-200 dark:bg-midnight">
-                    {talks.map((talk) => (
-                      <tr key={talk.name}>
-                        <td className="py-4 pl-4 pr-3 text-sm font-medium dark:text-slate-300 text-slate-500 whitespace-nowrap sm:pl-6">
-                          {talk.name}
-                        </td>
-                        <td className="px-3 py-4 text-sm dark:text-slate-300 text-slate-500 whitespace-nowrap">
-                          {talk.type}
-                        </td>
-                        <td className="px-3 py-4 text-sm dark:text-slate-300 text-slate-500 whitespace-nowrap">
-                          {talk.city}
-                        </td>
-                        <td className="px-3 py-4 text-sm dark:text-slate-300 text-slate-500 whitespace-nowrap">
-                          {talk.date}
-                        </td>
-                        <td className="relative py-4 pl-3 pr-4 text-sm font-medium text-right whitespace-nowrap sm:pr-6">
-                          {talk.url ? (
-                            <a
-                              href={talk.url}
-                              className="text-indigo-600 dark:text-teal-400 hover:text-indigo-900"
-                            >
-                              View
-                              <span className="sr-only">, {talk.name}</span>
-                            </a>
-                          ) : (
-                            <span>Not yet available</span>
-                          )}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
+                  {/*<tbody className="bg-white divide-y divide-gray-200 dark:bg-midnight">*/}
+                  {/*  {talks.map((talk) => (*/}
+                  {/*    <tr key={talk.name}>*/}
+                  {/*      <td className="py-4 pl-4 pr-3 text-sm font-medium dark:text-slate-300 text-slate-500 whitespace-nowrap sm:pl-6">*/}
+                  {/*        {talk.name}*/}
+                  {/*      </td>*/}
+                  {/*      <td className="px-3 py-4 text-sm dark:text-slate-300 text-slate-500 whitespace-nowrap">*/}
+                  {/*        {talk.type}*/}
+                  {/*      </td>*/}
+                  {/*      <td className="px-3 py-4 text-sm dark:text-slate-300 text-slate-500 whitespace-nowrap">*/}
+                  {/*        {talk.city}*/}
+                  {/*      </td>*/}
+                  {/*      <td className="px-3 py-4 text-sm dark:text-slate-300 text-slate-500 whitespace-nowrap">*/}
+                  {/*        {talk.date}*/}
+                  {/*      </td>*/}
+                  {/*      <td className="relative py-4 pl-3 pr-4 text-sm font-medium text-right whitespace-nowrap sm:pr-6">*/}
+                  {/*        {talk.url ? (*/}
+                  {/*          <a*/}
+                  {/*            href={talk.url}*/}
+                  {/*            className="text-indigo-600 dark:text-teal-400 hover:text-indigo-900"*/}
+                  {/*          >*/}
+                  {/*            View*/}
+                  {/*            <span className="sr-only">, {talk.name}</span>*/}
+                  {/*          </a>*/}
+                  {/*        ) : (*/}
+                  {/*          <span>Not yet available</span>*/}
+                  {/*        )}*/}
+                  {/*      </td>*/}
+                  {/*    </tr>*/}
+                  {/*  ))}*/}
+                  {/*</tbody>*/}
                 </table>
               </div>
             </div>
@@ -138,28 +138,28 @@ export default function Talks({ talks }) {
             </p>
             <fieldset>
               <legend className="sr-only">Biography Length</legend>
-              <div className="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">
-                {biographyLength.map((bioOption, index) => (
-                  <div key={bioOption.id}>
-                    <div className="flex items-center">
-                      <input
-                        id={bioOption.id}
-                        name="notification-method"
-                        type="radio"
-                        onChange={() => handleOptionChange(index)}
-                        defaultChecked={bioOption.id === '1st-long'}
-                        className="w-4 h-4 text-indigo-600 border-gray-300 focus:ring-indigo-500 dark:border-midnight"
-                      />
-                      <label
-                        htmlFor={bioOption.id}
-                        className="block ml-3 font-medium"
-                      >
-                        {bioOption.title}
-                      </label>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              {/*<div className="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">*/}
+              {/*  {biographyLength.map((bioOption, index) => (*/}
+              {/*    <div key={bioOption.id}>*/}
+              {/*      <div className="flex items-center">*/}
+              {/*        <input*/}
+              {/*          id={bioOption.id}*/}
+              {/*          name="notification-method"*/}
+              {/*          type="radio"*/}
+              {/*          onChange={() => handleOptionChange(index)}*/}
+              {/*          defaultChecked={bioOption.id === '1st-long'}*/}
+              {/*          className="w-4 h-4 text-indigo-600 border-gray-300 focus:ring-indigo-500 dark:border-midnight"*/}
+              {/*        />*/}
+              {/*        <label*/}
+              {/*          htmlFor={bioOption.id}*/}
+              {/*          className="block ml-3 font-medium"*/}
+              {/*        >*/}
+              {/*          {bioOption.title}*/}
+              {/*        </label>*/}
+              {/*      </div>*/}
+              {/*    </div>*/}
+              {/*  ))}*/}
+              {/*</div>*/}
             </fieldset>
           </div>
 

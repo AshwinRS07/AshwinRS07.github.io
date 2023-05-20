@@ -26,15 +26,15 @@ export default function Toolbox({ meetupContent }) {
           DM on Twitter!
         </a>
       </p>
-      <StickyColumn>
-        <div className="mt-12">
-          <div className="grid grid-cols-2">
-            {meetupContent.map((block) => (
-              <Fragment key={block.id}>{renderBlocks(block)}</Fragment>
-            ))}
-          </div>
-        </div>
-      </StickyColumn>
+      {/*<StickyColumn>*/}
+      {/*  <div className="mt-12">*/}
+      {/*    <div className="grid grid-cols-2">*/}
+      {/*      {meetupContent.map((block) => (*/}
+      {/*        <Fragment key={block.id}>{renderBlocks(block)}</Fragment>*/}
+      {/*      ))}*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*</StickyColumn>*/}
     </Container>
   );
 }

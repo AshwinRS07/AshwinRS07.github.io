@@ -80,27 +80,27 @@ export default function Blog({ featuredArticle, articles, tags, tag }) {
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = [];
-  const data: any = await getAllArticles(process.env.BLOG_DATABASE_ID);
+  // const data: any = await getAllArticles(process.env.BLOG_DATABASE_ID);
   let tags = [];
 
-  data.forEach((result) => {
-    if (result.object === 'page') {
-      result.properties?.tags?.multi_select.forEach((tag) => {
-        if (!tags.includes(tag.name)) {
-          tags.push(tag.name);
-        }
-      });
-    }
-  });
+  // data.forEach((result) => {
+  //   if (result.object === 'page') {
+  //     result.properties?.tags?.multi_select.forEach((tag) => {
+  //       if (!tags.includes(tag.name)) {
+  //         tags.push(tag.name);
+  //       }
+  //     });
+  //   }
+  // });
 
-  tags.forEach((tag) => {
-    paths.push({
-      params: {
-        tag: tag,
-        tags
-      }
-    });
-  });
+  // tags.forEach((tag) => {
+  //   paths.push({
+  //     params: {
+  //       tag: tag,
+  //       tags
+  //     }
+  //   });
+  // });
 
   return {
     paths,

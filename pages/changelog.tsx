@@ -17,23 +17,23 @@ export default function Toolbox({ completedItems, activeItems, backlogItems }) {
         </span>
       </h1>
 
-      <TimelineList>
-        {completedItems.map((completedItem, completedItemIndex) => (
-          <TimelineItem
-            key={completedItemIndex}
-            title={completedItem.title}
-            meta={new Date(completedItem.date).toLocaleDateString(
-              siteMetadata.locale,
-              {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-              }
-            )}
-            content={`<p>${completedItem.description}</p>`}
-          />
-        ))}
-      </TimelineList>
+      {/*<TimelineList>*/}
+      {/*  {completedItems.map((completedItem, completedItemIndex) => (*/}
+      {/*    <TimelineItem*/}
+      {/*      key={completedItemIndex}*/}
+      {/*      title={completedItem.title}*/}
+      {/*      meta={new Date(completedItem.date).toLocaleDateString(*/}
+      {/*        siteMetadata.locale,*/}
+      {/*        {*/}
+      {/*          year: 'numeric',*/}
+      {/*          month: 'long',*/}
+      {/*          day: 'numeric'*/}
+      {/*        }*/}
+      {/*      )}*/}
+      {/*      content={`<p>${completedItem.description}</p>`}*/}
+      {/*    />*/}
+      {/*  ))}*/}
+      {/*</TimelineList>*/}
     </Container>
   );
 }
