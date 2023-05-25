@@ -17,6 +17,7 @@ import image3 from 'public/images/5_basic_angular_testing_tips_banner.jpg'
 
 export default function Home({ recentArticles }) {
   const { push } = useRouter();
+  {/*Change Cover images?*/}
   recentArticles = [
     {
       title: 'Campus Job Portal',
@@ -42,9 +43,9 @@ export default function Home({ recentArticles }) {
             <h1 className="order-2 col-span-5 text-4xl leading-tight md:leading-normal md:order-1 sm:text-5xl">
               I'm{' '}
               <span className="text-teal-500 dark:text-teal-400">Ashwin</span>.
-              A curious full-stack engineer with expertise in Java
+              A curious full-stack engineer with expertise in Java {/*Possibly Change?*/}
             </h1>
-            <div className="order-1 md:order-2">
+            <div className="order-1 md:order-2"> {/*Change size?*/}
               <Image
                 alt="Braydon Coyer"
                 height={160}
@@ -62,7 +63,7 @@ export default function Home({ recentArticles }) {
               buttonType={ButtonType.PRIMARY}
               onButtonClick={() => push('/projects')}
             >
-              Read the projects
+              Read the projects {/*Change to something nicer*/}
             </Button>
             <Button
               buttonType={ButtonType.SECONDARY}
@@ -74,7 +75,7 @@ export default function Home({ recentArticles }) {
         </div>
         <hr className="hr"></hr>
         <div>
-          <h2>I love to share my knowledge through creating applications.</h2>
+          <h2>I love to share my knowledge through creating applications.</h2> {/*Something more attractive?*/}
           <p>Check out a few of my most recent projects.</p>
           <ArticleList articles={recentArticles} />
           <div className="my-16">

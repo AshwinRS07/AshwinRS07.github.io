@@ -18,7 +18,7 @@ const siteMetadata = {
   codepen: 'https://codepen.io/braydoncoyer',
   linkedin: 'https://www.linkedin.com/in/ashwinrs07/',
   newsletter: '',
-  resume: '/static/Ashwin-Resume.pdf',
+  resume: '/static/Ashwin_Shenolikar_Resume.pdf',
   snippets:
     '',
   carbonCode: '',

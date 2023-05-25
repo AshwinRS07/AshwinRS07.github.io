@@ -1,7 +1,25 @@
 import { Ad } from '@/components/Ad';
 import { Container } from 'layouts/Container';
 import Image from 'next/legacy/image';
+{/*
+Project List:
 
+Software Development:
+Campus Job Portal
+Online Bookstore
+Movie Ticket Reservation
+Portfolio Website
+Maze Solving Bot
+River Crossing Game Engine
+Duck Simulator
+
+Machine Learning:
+Code Summarization
+Music Genre Classification
+Vehicle Classification/Numberplate Detection
+EV Charging/Parking Garage location analysis
+
+*/}
 function ButtonLink({ text, href }) {
   return (
     <a

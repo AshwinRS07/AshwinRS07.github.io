@@ -22,64 +22,68 @@ export default function About({ workTimeline }) {
           About me
         </span>
         <span className="block max-w-2xl mx-auto mt-2 text-4xl font-bold leading-10 text-center sm:text-5xl">
-          Here's my story.
+          My Story, so far. {/*My Story, so far*/}
         </span>
       </h1>
       <p>
-        I’m Braydon, a developer,{' '}
+        I’m Ashwin, a developer,{' '}
         <CustomLink href={siteMetadata.codepen}>creative coder</CustomLink>,{' '}
         <CustomLink href={`${siteMetadata.siteUrl}/blog`}>blogger</CustomLink>{' '}
         and self-proclaimed designer who specializes in front-end development.
-        My mission is to translate user-focussed designs into pixel-perfect
-        websites or applications that run blazing fast.
+        My mission is to nurture my trait of being cautiously curious to develop
+        meaningful, efficient and pixel-perfect products, that satisfy my customer's
+        needs as much as they do my own high standard of code quality.
       </p>
       <p>
-        I’m currently working as a senior front end developer at{' '}
-        <CustomLink href="https://www.logicgate.com">LogicGate</CustomLink>{' '}
-        where I help develop an agile GRC cloud solution that combines powerful
-        functionality with intuitive design to enhance enterprise GRC programs.
+        As of now, I am focused on searching for a job as a fresher(help appreciated!),
+        in the meantime developing personal projects, and contributing to
+        open source repositories, and grinding away at Leetcode.
+      </p>
+      <p>
+        I have recently graduated from Virginia Tech's Master's in Engineering course,
+        with a focus in Software Development and Machine Learning.
+        {/*I’m currently working as a senior front end developer at{' '}
+          <CustomLink href="https://www.logicgate.com">LogicGate</CustomLink>{' '}*/}
+        where I worked and learned modern software development techniques and
+        actually implemented projects using current industry software development model and frameworks.
       </p>
       <div>
         <div className="hidden md:block md:float-left">
           <Image
             className="md:mr-8"
-            src="https://res.cloudinary.com/braydoncoyer/image/upload/v1670716662/family_photo_scs57f.jpg"
+            src="https://res.cloudinary.com/dmltcfxo4/image/upload/v1684980240/IMG_0161_nlthrx.jpg"
             placeholder="blur"
-            blurDataURL="https://res.cloudinary.com/braydoncoyer/image/upload/v1670716662/family_photo_scs57f.jpg"
+            blurDataURL="https://res.cloudinary.com/dmltcfxo4/image/upload/v1684980240/IMG_0161_nlthrx.jpg"
             width={340}
             height={448}
             alt={'article cover'}
           />
         </div>
         <p>
-          Prior to LogicGate, I worked as a senior full-stack engineer at{' '}
-          <CustomLink href="https://www.cognizant.com/us/en">
-            Cognizant
-          </CustomLink>{' '}
-          where I helped architect and develop full-stack RESTful microservices,
-          train and prepare developers for delivery, and assist in leading the
-          front-end practice in a lab-based working environment.
+          During my Master's, I have worked as a Graduate Student Assistant at the upcoming Virginia Tech Innovation
+          Campus, and have been instrumental in a lot of the projects and events that took place during my employment.
         </p>
         <p>
-          Before Cognizant, I worked as a UI Developer for{' '}
-          <CustomLink href="https://www.projekt202.com">projekt202</CustomLink>{' '}
-          helping craft design systems and building reusable component libraries
-          for multi-million dollar companies.
+          Prior to coming to the USA for my Master's, I was doing my Bachelor's in Computer
+          Science and Engineering in the University of Mumbai's A.P. Shah Institute of Technology,
+          where I helped my institute's nascent department grow by organizing various events,
+          some technical and some not!
         </p>
         <p>
-          In a past life, I was an indie mobile developer making mobile games
-          for iOS and Android, with one of my games outselling Angry Birds.
+          During my undergrad, I not only learned in detail about Computer Science as a whole,
+          I had invaluable mentors who taught me about the semantic gap between industry and academia,
+          and cultured in me a trait of being cautious, curious and competitive to excel in my post-academic pursuits,
+          which I value to this day and going forward.
         </p>
         <p>
-          You can find me on <a href={siteMetadata.twitter}>Twitter</a> where I
-          share tech-related tidbits and build in public, or you can follow me
-          on <CustomLink href={siteMetadata.github}>GitHub</CustomLink>. I often
-          write about my findings on my{' '}
-          <CustomLink href={`${siteMetadata.siteUrl}/blog`}>blog</CustomLink>{' '}
-          and create cool things over on{' '}
-          <CustomLink href={siteMetadata.codepen}>CodePen</CustomLink>. I also
-          help run a mediocre{' '}
-          <CustomLink href="https://anchor.fm/florida-man">podcast</CustomLink>.
+          Apart from my academic pursuits, I enjoy going on treks, reading, learning
+          new languages and instruments(Spanish and Guitar as of now), gaming, and going for
+          badminton and/or cricket in my free time.
+        </p>
+        <p>
+          You can find me on <a href={siteMetadata.linkedin}>LinkedIn</a> where I
+          am rather active, or you can follow me
+          on <CustomLink href={siteMetadata.github}>GitHub</CustomLink> to check out my latest contributions and projects!
         </p>
         <div></div>
       </div>
@@ -109,6 +113,10 @@ export default function About({ workTimeline }) {
         </Button>
       </div>
       <hr className="my-16 w-full border-none text-center h-10 before:content-['∿∿∿'] before:text-[#D1D5DB] before:text-2xl"></hr>
+
+      {/* Add about: Student Organizations, VT Innovation Campus, Treks*/}
+
+
       {/*<div className="mb-12">*/}
       {/*  <h2>I love to share my knowledge through writing.</h2>*/}
       {/*  <p>Check out a few of my most recent publishings.</p>*/}
@@ -158,6 +166,14 @@ export const getStaticProps: GetStaticProps = async () => {
       description: ' Created an embedded system with onboard web server to control multiple HVAC systems improving energy usage by 14%.\n' +
         'Coded C++ backend and JavaScript+jQuery web server and deployed on ESP8266 micro-controller with minimal latency.'
     }
+    /*Developed an embedded systems project to optimize energy usage by HVAC units. This was done in the form of a 'smart thermostat': An Arduino-powered board-ESP8266,
+    with IR blasters and the capability to host a web server developed by me, allowing for remote control of every such unit sharing the server. The Tech Stack used was
+    C++, HTML, CSS, Javascript, jQuery and Arduino IDE with hardware component connections.
+    I interned there and worked on an embedded systems project involving both hardware and software components. Learned about coding software for real-time use at an end-product and
+    wrote the entire code for the project single-handedly. The hardware used contained modules such as infrared blasters and receivers, ESP8266, and Arduino NANO and UNO modules, with some more peripherals.
+    The end result was a custom automated Thermostat with a central webserver to remotely control the AC units within the range of the device.
+    At the same time learned about basic systems management at the office level.
+*/
   ];
 
   return {
