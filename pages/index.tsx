@@ -43,11 +43,11 @@ export default function Home({ recentArticles }) {
             <h1 className="order-2 col-span-5 text-4xl leading-tight md:leading-normal md:order-1 sm:text-5xl">
               I'm{' '}
               <span className="text-teal-500 dark:text-teal-400">Ashwin</span>.
-              A curious full-stack engineer with expertise in Java {/*Possibly Change?*/}
+              A curious full-stack engineer with expertise in Python and Java {/*Possibly Change?*/}
             </h1>
             <div className="order-1 md:order-2"> {/*Change size?*/}
               <Image
-                alt="Braydon Coyer"
+                alt="Ashwin Shenolikar"
                 height={160}
                 width={160}
                 src={avatarImage}
@@ -63,7 +63,7 @@ export default function Home({ recentArticles }) {
               buttonType={ButtonType.PRIMARY}
               onButtonClick={() => push('/projects')}
             >
-              Read the projects {/*Change to something nicer*/}
+              Check out my projects {/*Change to something nicer*/}
             </Button>
             <Button
               buttonType={ButtonType.SECONDARY}

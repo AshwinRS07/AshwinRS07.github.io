@@ -52,7 +52,7 @@ function ButtonLink({ text, href }) {
 
 export default function Projects() {
   return (
-    <Container title='Projects - Braydon Coyer'>
+    <Container title='Projects - Ashwin Shenolikar'>
       <h1>
         <span
           className='block text-base font-semibold tracking-wide text-center text-indigo-500 uppercase dark:text-teal-400'>

@@ -61,7 +61,7 @@ export function Container(props) {
         />
         <link rel="canonical" href={meta.canonicalUrl} />
         <meta property="og:type" content={meta.type} />
-        <meta property="og:site_name" content="Braydon Coyer" />
+        <meta property="og:site_name" content="Ashwin Shenolikar" />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
         <meta

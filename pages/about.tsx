@@ -16,7 +16,7 @@ import { useRouter } from 'next/router';
 export default function About({ workTimeline }) {
   const { push } = useRouter();
   return (
-    <Container title="About Me - Braydon Coyer">
+    <Container title="About Me - Ashwin Shenolikar">
       <h1>
         <span className="block text-base font-semibold tracking-wide text-center text-indigo-500 uppercase dark:text-teal-400">
           About me
@@ -48,7 +48,7 @@ export default function About({ workTimeline }) {
         actually implemented projects using current industry software development model and frameworks.
       </p>
       <div>
-        <div className="hidden md:block md:float-left">
+        <div className="hidden md:block md:float-right">
           <Image
             className="md:mr-8"
             src="https://res.cloudinary.com/dmltcfxo4/image/upload/v1684980240/IMG_0161_nlthrx.jpg"
@@ -69,12 +69,12 @@ export default function About({ workTimeline }) {
           where I helped my institute's nascent department grow by organizing various events,
           some technical and some not!
         </p>
-        <p>
-          During my undergrad, I not only learned in detail about Computer Science as a whole,
-          I had invaluable mentors who taught me about the semantic gap between industry and academia,
-          and cultured in me a trait of being cautious, curious and competitive to excel in my post-academic pursuits,
-          which I value to this day and going forward.
-        </p>
+        {/*<p>*/}
+        {/*  During my undergrad, I not only learned in detail about Computer Science as a whole,*/}
+        {/*  I had invaluable mentors who taught me about the semantic gap between industry and academia,*/}
+        {/*  and cultured in me a trait of being cautious, curious and competitive to excel in my post-academic pursuits,*/}
+        {/*  which I value to this day and going forward.*/}
+        {/*</p>*/}
         <p>
           Apart from my academic pursuits, I enjoy going on treks, reading, learning
           new languages and instruments(Spanish and Guitar as of now), gaming, and going for
