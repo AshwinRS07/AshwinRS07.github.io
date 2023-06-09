@@ -182,12 +182,12 @@ export default function Projects() {
             <div className='md:w-[650px] max-h-[500px]'>
               <Image
                 className='absolute bottom-20 md:bottom-0 md:-left-16'
-                objectFit='fill'
+                objectFit='scale-down'
                 src='https://res.cloudinary.com/dmltcfxo4/image/upload/v1686335163/Meshmerize_squared_bt99o3.jpg'
                 placeholder='blur'
                 blurDataURL='https://res.cloudinary.com/dmltcfxo4/image/upload/v1686335163/Meshmerize_squared_bt99o3.jpg'
-                width={1978}
-                height={1713}
+                width={450}
+                height={450}
                 layout='intrinsic'
                 alt={'Robot Image'}
               />
@@ -198,7 +198,7 @@ export default function Projects() {
                 Created a robot powered with an Arduino NANO unit which can traverse a maze randomly, and then use an
                 optimization algorithm to remember and traverse the best path from the first run on a second run
               </p>
-              Upload BookHub to GitHub
+              {/*Upload BookHub to GitHub*/}
               <ButtonLink
                 text='Visit Meshmerize!'
                 href='https://github.com/AshwinRS07/Meshmerize'
