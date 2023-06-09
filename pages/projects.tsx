@@ -115,8 +115,8 @@ export default function Projects() {
                 src='https://res.cloudinary.com/dmltcfxo4/image/upload/v1686260039/bookstore-logo.6edc632b_zvdrsi.png'
                 placeholder='blur'
                 blurDataURL='https://res.cloudinary.com/dmltcfxo4/image/upload/v1686260039/bookstore-logo.6edc632b_zvdrsi.png'
-                width={1000}
-                height={1000}
+                width={500}
+                height={450}
                 layout='intrinsic'
                 alt={'Online Bookstore Logo'}
               />
