@@ -174,38 +174,38 @@ export default function Projects() {
         <br />
 
         {/* Add A New Project*/}
-        {/*<div*/}
-        {/*  className='relative w-full overflow-hidden border rounded-3xl bg-gradient-to-b from-purple-50 dark:from-purple-900/50 dark:to-fuchsia-700 to-fuchsia-300 dark:border-slate-700 border-slate-100'>*/}
-        {/*  <div*/}
-        {/*    className='w-full h-[1px] bg-gradient-to-r from-transparent via-fuchsia-300 dark:via-fuchsia-600 to-transparent'></div>*/}
-        {/*  <div className='grid grid-cols-1 min-h-[500px] max-h-[500px] md:grid-cols-2'>*/}
-        {/*    <div className='md:w-[650px] max-h-[500px]'>*/}
-        {/*      <Image*/}
-        {/*        className='absolute bottom-20 md:bottom-0 md:-left-16'*/}
-        {/*        objectFit='fill'*/}
-        {/*        src='https://res.cloudinary.com/dmltcfxo4/image/upload/v1686260039/bookstore-logo.6edc632b_zvdrsi.png'*/}
-        {/*        placeholder='blur'*/}
-        {/*        blurDataURL='https://res.cloudinary.com/dmltcfxo4/image/upload/v1686260039/bookstore-logo.6edc632b_zvdrsi.png'*/}
-        {/*        width={1978}*/}
-        {/*        height={1713}*/}
-        {/*        layout='intrinsic'*/}
-        {/*        alt={'NgLimeade on an iPad'}*/}
-        {/*      />*/}
-        {/*    </div>*/}
-        {/*    <div className='self-end order-first col-span-1 m-8 text-center md:order-last md:text-left'>*/}
-        {/*      <h2 className='mt-0'>Online Bookstore Web Application</h2>*/}
-        {/*      <p>*/}
-        {/*        Designed and coded an online bookstore, where users to order books from a multi-genre catalog,*/}
-        {/*        with a functional shopping cart, with 12 REST APIs and 5+ backend packages.*/}
-        {/*      </p>*/}
-        {/*      /!*Upload BookHub to GitHub*!/*/}
-        {/*      /!*<ButtonLink*!/*/}
-        {/*      /!*  text='Visit Bookhub!'*!/*/}
-        {/*      /!*  href=''*!/*/}
-        {/*      />*/}
-        {/*    </div>*/}
-        {/*  </div>*/}
-        {/*</div>*/}
+        <div
+          className='relative w-full overflow-hidden border rounded-3xl bg-gradient-to-b from-purple-50 dark:from-purple-900/50 dark:to-fuchsia-700 to-fuchsia-300 dark:border-slate-700 border-slate-100'>
+          <div
+            className='w-full h-[1px] bg-gradient-to-r from-transparent via-fuchsia-300 dark:via-fuchsia-600 to-transparent'></div>
+          <div className='grid grid-cols-1 min-h-[500px] max-h-[500px] md:grid-cols-2'>
+            <div className='md:w-[650px] max-h-[500px]'>
+              <Image
+                className='absolute bottom-20 md:bottom-0 md:-left-16'
+                objectFit='fill'
+                src='https://res.cloudinary.com/dmltcfxo4/image/upload/v1686335163/Meshmerize_squared_bt99o3.jpg'
+                placeholder='blur'
+                blurDataURL='https://res.cloudinary.com/dmltcfxo4/image/upload/v1686335163/Meshmerize_squared_bt99o3.jpg'
+                width={1978}
+                height={1713}
+                layout='intrinsic'
+                alt={'Robot Image'}
+              />
+            </div>
+            <div className='self-end order-first col-span-1 m-8 text-center md:order-last md:text-left'>
+              <h2 className='mt-0'>Maze Solving Bot</h2>
+              <p>
+                Created a robot powered with an Arduino NANO unit which can traverse a maze randomly, and then use an
+                optimization algorithm to remember and traverse the best path from the first run on a second run
+              </p>
+              Upload BookHub to GitHub
+              <ButtonLink
+                text='Visit Meshmerize!'
+                href='https://github.com/AshwinRS07/Meshmerize'
+              />
+            </div>
+          </div>
+        </div>
 
       </div>
     </Container>
