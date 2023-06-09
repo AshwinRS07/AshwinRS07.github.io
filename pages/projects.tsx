@@ -87,7 +87,7 @@ export default function Projects() {
                 src='https://res.cloudinary.com/dmltcfxo4/image/upload/v1686260020/Campus_Job_Portal_logo_i1xurd.png'
                 placeholder='blur'
                 blurDataURL='https://res.cloudinary.com/dmltcfxo4/image/upload/v1686260020/Campus_Job_Portal_logo_i1xurd.png'
-                width={780}
+                width={500}
                 height={500}
                 layout='intrinsic'
                 alt={'Campus Job Portal'}
@@ -115,8 +115,8 @@ export default function Projects() {
                 src='https://res.cloudinary.com/dmltcfxo4/image/upload/v1686260039/bookstore-logo.6edc632b_zvdrsi.png'
                 placeholder='blur'
                 blurDataURL='https://res.cloudinary.com/dmltcfxo4/image/upload/v1686260039/bookstore-logo.6edc632b_zvdrsi.png'
-                width={1400}
-                height={1400}
+                width={1000}
+                height={1000}
                 layout='intrinsic'
                 alt={'Online Bookstore Logo'}
               />
