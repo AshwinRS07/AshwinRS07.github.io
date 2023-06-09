@@ -10,8 +10,8 @@ import { Subscribe } from '@/components/Subscribe';
 import siteMetadata from '@/data/siteMetadata';
 import { useRouter } from 'next/router';
 import avatarImage from 'public/images/avatar.png';
-import image1 from 'public/images/photo-1550684848-86a5d8727436_j4pgmt.jpg'
-import image2 from 'public/images/photo-1661273714315-43546846c175_o2ihp4.jpg'
+import image1 from 'public/images/Campus_Job_Portal_logo.png'
+import image2 from 'public/images/bookstore-logo.6edc632b.png'
 import image3 from 'public/images/5_basic_angular_testing_tips_banner.jpg'
 
 
@@ -43,13 +43,13 @@ export default function Home({ recentArticles }) {
             <h1 className="order-2 col-span-5 text-4xl leading-tight md:leading-normal md:order-1 sm:text-5xl">
               I'm{' '}
               <span className="text-teal-500 dark:text-teal-400">Ashwin</span>.
-              A curious full-stack engineer with expertise in Python and Java {/*Possibly Change?*/}
+              A curious software engineer with expertise in Python and Java {/*Possibly Change?*/}
             </h1>
             <div className="order-1 md:order-2"> {/*Change size?*/}
               <Image
                 alt="Ashwin Shenolikar"
-                height={160}
-                width={160}
+                height={180}
+                width={180}
                 src={avatarImage}
                 placeholder="blur"
                 blurDataURL={siteMetadata.avatarImage}
@@ -75,7 +75,7 @@ export default function Home({ recentArticles }) {
         </div>
         <hr className="hr"></hr>
         <div>
-          <h2>I love to share my knowledge through creating applications.</h2> {/*Something more attractive?*/}
+          <h2>I love to apply my knowledge through creating applications.</h2> {/*Something more attractive?*/}
           <p>Check out a few of my most recent projects.</p>
           <ArticleList articles={recentArticles} />
           <div className="my-16">
@@ -83,7 +83,7 @@ export default function Home({ recentArticles }) {
               buttonType={ButtonType.PRIMARY}
               onButtonClick={() => push('/projects')}
             >
-              See all projects
+              See all my projects
             </Button>
           </div>
           {/*<div className="mt-16">*/}

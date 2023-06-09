@@ -25,18 +25,16 @@ export default function About({ workTimeline }) {
           My Story, so far. {/*My Story, so far*/}
         </span>
       </h1>
+      {/* For Embedded Text Links: {' '}<CustomLink href={siteMetadata.<LinkName>}>Text</CustomLink>*/}
       <p>
-        I’m Ashwin, a developer,{' '}
-        <CustomLink href={siteMetadata.codepen}>creative coder</CustomLink>,{' '}
-        <CustomLink href={`${siteMetadata.siteUrl}/blog`}>blogger</CustomLink>{' '}
-        and self-proclaimed designer who specializes in front-end development.
-        My mission is to nurture my trait of being cautiously curious to develop
+        I’m Ashwin, a software developer, aspiring open source contributor, and self-proclaimed designer.
+        My mission is to nurture my trait of being cautiously curious by developing
         meaningful, efficient and pixel-perfect products, that satisfy my customer's
         needs as much as they do my own high standard of code quality.
       </p>
       <p>
-        As of now, I am focused on searching for a job as a fresher(help appreciated!),
-        in the meantime developing personal projects, and contributing to
+        As of now, I am open to work as a fresher in the industry, feel free to reach out by the way,
+        while simultaneously developing personal projects, and contributing to
         open source repositories, and grinding away at Leetcode.
       </p>
       <p>
@@ -44,8 +42,9 @@ export default function About({ workTimeline }) {
         with a focus in Software Development and Machine Learning.
         {/*I’m currently working as a senior front end developer at{' '}
           <CustomLink href="https://www.logicgate.com">LogicGate</CustomLink>{' '}*/}
-        where I worked and learned modern software development techniques and
-        actually implemented projects using current industry software development model and frameworks.
+        Over my academics, I worked with and learned modern software development techniques and
+        actually implemented projects using current industry software development model and frameworks,
+        such as Vue.js and Spring Boot.
       </p>
       <div>
         <div className="hidden md:block md:float-right">
@@ -66,8 +65,9 @@ export default function About({ workTimeline }) {
         <p>
           Prior to coming to the USA for my Master's, I was doing my Bachelor's in Computer
           Science and Engineering in the University of Mumbai's A.P. Shah Institute of Technology,
-          where I helped my institute's nascent department grow by organizing various events,
-          some technical and some not!
+          where I helped my institute's nascent department grow considerably by organizing technical and non-technical events,
+          also assisting my department with securing a national level accreditation for education quality.
+
         </p>
         {/*<p>*/}
         {/*  During my undergrad, I not only learned in detail about Computer Science as a whole,*/}
@@ -161,10 +161,26 @@ export const getStaticProps: GetStaticProps = async () => {
     {
       title: 'Software Engineer Intern',
       company: 'Nucsoft Ltd',
-      company_url: 'https://github.com/AshwinRS07/',
+      company_url: 'https://www.nucsoft.com/',
       duration: '',
-      description: ' Created an embedded system with onboard web server to control multiple HVAC systems improving energy usage by 14%.\n' +
+      description: 'Created an embedded system with onboard web server to control multiple HVAC systems improving energy usage by 14%.\n' +
         'Coded C++ backend and JavaScript+jQuery web server and deployed on ESP8266 micro-controller with minimal latency.'
+    },
+    {
+      title: 'Graduate Student Assistant',
+      company: 'Virginia Tech - Innovation Campus',
+      company_url: 'https://www.vt.edu/innovationcampus/index.html',
+      duration: '',
+      description: 'Worked as a graduate student assistant for the Virginia Tech Innovation Campus HQ, directly under the Administrative Head, \n' +
+      'with tasks such as event management, inventory management, usage and handling of the office space security systems, and additional tasks as per requirement. \n'
+    },
+    {
+      title: 'Core Member',
+      company: 'APSIT - CMSA | Computer Society of India',
+      company_url: 'https://www.apsit.edu.in/cmsa',
+      duration: '',
+      description: 'Worked as a core council member for the computer science department of my undergraduate college, being actively involved in departmental activities and practices, \n' +
+        'conducting technical events and guest lectures, and maintaining the department\'s infrastructure throughout the duration of the position.\n'
     }
     /*Developed an embedded systems project to optimize energy usage by HVAC units. This was done in the form of a 'smart thermostat': An Arduino-powered board-ESP8266,
     with IR blasters and the capability to host a web server developed by me, allowing for remote control of every such unit sharing the server. The Tech Stack used was
