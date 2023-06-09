@@ -88,7 +88,7 @@ export default function Projects() {
                 placeholder='blur'
                 blurDataURL='https://res.cloudinary.com/dmltcfxo4/image/upload/v1686260020/Campus_Job_Portal_logo_i1xurd.png'
                 width={500}
-                height={450}
+                height={500}
                 layout='intrinsic'
                 alt={'Campus Job Portal'}
               />
@@ -116,7 +116,7 @@ export default function Projects() {
                 placeholder='blur'
                 blurDataURL='https://res.cloudinary.com/dmltcfxo4/image/upload/v1686260039/bookstore-logo.6edc632b_zvdrsi.png'
                 width={500}
-                height={450}
+                height={500}
                 layout='intrinsic'
                 alt={'Online Bookstore Logo'}
               />
@@ -186,8 +186,8 @@ export default function Projects() {
                 src='https://res.cloudinary.com/dmltcfxo4/image/upload/v1686335163/Meshmerize_squared_bt99o3.jpg'
                 placeholder='blur'
                 blurDataURL='https://res.cloudinary.com/dmltcfxo4/image/upload/v1686335163/Meshmerize_squared_bt99o3.jpg'
-                width={450}
-                height={450}
+                width={500}
+                height={500}
                 layout='intrinsic'
                 alt={'Robot Image'}
               />
