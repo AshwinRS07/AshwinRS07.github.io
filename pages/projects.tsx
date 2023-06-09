@@ -88,7 +88,7 @@ export default function Projects() {
                 placeholder='blur'
                 blurDataURL='https://res.cloudinary.com/dmltcfxo4/image/upload/v1686260020/Campus_Job_Portal_logo_i1xurd.png'
                 width={500}
-                height={500}
+                height={450}
                 layout='intrinsic'
                 alt={'Campus Job Portal'}
               />
@@ -111,7 +111,7 @@ export default function Projects() {
             <div className='md:w-[650px] max-h-[500px]'>
               <Image
                 className='absolute bottom-20 md:bottom-0 md:-left-16'
-                objectFit='contain'
+                objectFit='scale-down'
                 src='https://res.cloudinary.com/dmltcfxo4/image/upload/v1686260039/bookstore-logo.6edc632b_zvdrsi.png'
                 placeholder='blur'
                 blurDataURL='https://res.cloudinary.com/dmltcfxo4/image/upload/v1686260039/bookstore-logo.6edc632b_zvdrsi.png'
