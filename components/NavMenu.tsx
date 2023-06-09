@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 
-import DarkLogo from 'public/site_logo.svg';
+import DarkLogo from 'public/images/site_logo.png';
 import { Dialog } from '@headlessui/react';
 import Image from 'next/image';
-import LightLogo from 'public/site_logo.svg';
+import LightLogo from 'public/images/site_logo.png';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useTheme } from 'next-themes';
@@ -47,7 +47,7 @@ export function NavMenu({}) {
                 height={38}
                 width={38}
                 src={DarkLogo}
-                blurDataURL={DarkLogo}
+                // blurDataURL={DarkLogo}
                 className="rounded-full"
               />
             </span>
@@ -59,7 +59,7 @@ export function NavMenu({}) {
                 height={38}
                 width={38}
                 src={LightLogo}
-                blurDataURL={LightLogo}
+                // blurDataURL={LightLogo}
                 className="rounded-full"
               />
             </span>
