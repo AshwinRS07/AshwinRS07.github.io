@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 
-import DarkLogo from 'public/bcoyerlogo_dark.svg';
+import DarkLogo from 'public/site_logo.svg';
 import { Dialog } from '@headlessui/react';
 import Image from 'next/image';
-import LightLogo from 'public/bcoyerlogo_white.svg';
+import LightLogo from 'public/site_logo.svg';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useTheme } from 'next-themes';
