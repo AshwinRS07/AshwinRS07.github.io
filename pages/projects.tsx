@@ -83,7 +83,7 @@ export default function Projects() {
             </div>
             <div className='md:absolute md:top-4 md:right-[-200px] md:w-[800px]'>
               <Image
-                objectFit='fill'
+                objectFit='contain'
                 src='https://res.cloudinary.com/dmltcfxo4/image/upload/v1686260020/Campus_Job_Portal_logo_i1xurd.png'
                 placeholder='blur'
                 blurDataURL='https://res.cloudinary.com/dmltcfxo4/image/upload/v1686260020/Campus_Job_Portal_logo_i1xurd.png'
@@ -111,14 +111,13 @@ export default function Projects() {
             <div className='md:w-[650px] max-h-[500px]'>
               <Image
                 className='absolute bottom-20 md:bottom-0 md:-left-16'
-                objectFit='fill'
+                objectFit='contain'
                 src='https://res.cloudinary.com/dmltcfxo4/image/upload/v1686260039/bookstore-logo.6edc632b_zvdrsi.png'
                 placeholder='blur'
                 blurDataURL='https://res.cloudinary.com/dmltcfxo4/image/upload/v1686260039/bookstore-logo.6edc632b_zvdrsi.png'
                 width={1978}
                 height={1713}
                 layout='intrinsic'
-                alt={'NgLimeade on an iPad'}
               />
             </div>
             <div className='self-end order-first col-span-1 m-8 text-center md:order-last md:text-left'>
