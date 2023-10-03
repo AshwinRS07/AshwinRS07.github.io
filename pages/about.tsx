@@ -40,23 +40,24 @@ export default function About({ workTimeline }) {
          and contributing to open source repositories when I can!
       </p>
       <p>
+      <div className="hidden md:block md:float-left">
+          <Image
+            className="md:mr-8"
+            src="https://res.cloudinary.com/dmltcfxo4/image/upload/v1696295617/Leetcode_SS_cjtxv9.png"
+            placeholder="blur"
+            blurDataURL="https://res.cloudinary.com/dmltcfxo4/image/upload/v1696295617/Leetcode_SS_cjtxv9.png"
+            width={300}
+            height={150}
+            alt={'Leetcode_stats'}
+          />
+        </div>
         I have recently graduated from Virginia Tech's Master's in Engineering course,
         with a dual focus in Software Development and Machine Learning.
         Over the 6 years of my academic journey in the world of Computer Science, 
         I worked with and learned modern software development techniques and
         actually implemented projects using current industry software development model and frameworks, 
         this website being a great example of one of my React.js projects.
-        <div className="hidden md:block md:float-right">
-          <Image
-            className="md:mr-8"
-            src="https://res.cloudinary.com/dmltcfxo4/image/upload/v1696295617/Leetcode_SS_cjtxv9.png"
-            placeholder="blur"
-            blurDataURL="https://res.cloudinary.com/dmltcfxo4/image/upload/v1696295617/Leetcode_SS_cjtxv9.png"
-            width={200}
-            height={100}
-            alt={'Leetcode_stats'}
-          />
-        </div>
+        
       </p>
       <div>
         <div className="hidden md:block md:float-right">
