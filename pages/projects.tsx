@@ -127,11 +127,10 @@ export default function Projects() {
                 Designed and coded an online bookstore, where users to order books from a multi-genre catalog,
                 with a functional shopping cart, with 12 REST APIs and 5+ backend packages.
               </p>
-              {/*Upload BookHub to GitHub*/}
-              {/*<ButtonLink*/}
-              {/*  text='Visit Bookhub!'*/}
-              {/*  href=''*/}
-              {/*/>*/}
+              <ButtonLink
+                text='Visit Bookhub!'
+                href='https://github.com/AshwinRS07/OnlineBookstore'
+              />
             </div>
           </div>
         </div>
