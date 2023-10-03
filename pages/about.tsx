@@ -27,24 +27,36 @@ export default function About({ workTimeline }) {
       </h1>
       {/* For Embedded Text Links: {' '}<CustomLink href={siteMetadata.<LinkName>}>Text</CustomLink>*/}
       <p>
-        I’m Ashwin, a software developer, aspiring open source contributor, and self-proclaimed designer.
-        My mission is to nurture my trait of being cautiously curious by developing
+        I’m Ashwin, a software developer, newbie open source contributor, and hobbyist game developer.
+        My mission is to be cautiously curious and never stop learning while developing
         meaningful, efficient and pixel-perfect products, that satisfy my customer's
-        needs as much as they do my own high standard of code quality.
+        needs as much as they do my own high standard of product quality.
       </p>
       <p>
-        As of now, I am open to work as a fresher in the industry, feel free to reach out by the way,
-        while simultaneously developing personal projects, and contributing to
-        open source repositories, and grinding away at Leetcode.
+        As of now, I am volunteering as an Application Developer at Virginia Tech, while
+        I search for my first big role! Feel free to reach out with any opportunities you're
+        aware of by the way :D.
+        Simultaneously, I am developing personal projects ranging from Web products to 2D game dev,
+         and contributing to open source repositories when I can!
       </p>
       <p>
         I have recently graduated from Virginia Tech's Master's in Engineering course,
-        with a focus in Software Development and Machine Learning.
-        {/*I’m currently working as a senior front end developer at{' '}
-          <CustomLink href="https://www.logicgate.com">LogicGate</CustomLink>{' '}*/}
-        Over my academics, I worked with and learned modern software development techniques and
-        actually implemented projects using current industry software development model and frameworks,
-        such as Vue.js and Spring Boot.
+        with a dual focus in Software Development and Machine Learning.
+        Over the 6 years of my academic journey in the world of Computer Science, 
+        I worked with and learned modern software development techniques and
+        actually implemented projects using current industry software development model and frameworks, 
+        this website being a great example of one of my React.js projects.
+        <div className="hidden md:block md:float-right">
+          <Image
+            className="md:mr-8"
+            src="https://res.cloudinary.com/dmltcfxo4/image/upload/v1696295617/Leetcode_SS_cjtxv9.png"
+            placeholder="blur"
+            blurDataURL="https://res.cloudinary.com/dmltcfxo4/image/upload/v1696295617/Leetcode_SS_cjtxv9.png"
+            width={200}
+            height={100}
+            alt={'Leetcode_stats'}
+          />
+        </div>
       </p>
       <div>
         <div className="hidden md:block md:float-right">
@@ -59,8 +71,8 @@ export default function About({ workTimeline }) {
           />
         </div>
         <p>
-          During my Master's, I have worked as a Graduate Student Assistant at the upcoming Virginia Tech Innovation
-          Campus, and have been instrumental in a lot of the projects and events that took place during my employment.
+          During my Master's, I have worked as a Graduate Assistant at the upcoming Virginia Tech Innovation
+          Campus, and have been instrumental in a lot of the projects and events during my employment.
         </p>
         <p>
           Prior to coming to the USA for my Master's, I was doing my Bachelor's in Computer
@@ -158,6 +170,14 @@ export default function About({ workTimeline }) {
 
 export const getStaticProps: GetStaticProps = async () => {
   const workTimeline = [
+    {
+      title: 'Application Developer',
+      company: 'Virginia Tech',
+      company_url: 'https://www.ise.vt.edu/',
+      duration: 'Presently Working',
+      description: 'I work to maintain and enhance the VT ISE department\'s website using the latest technologies to integrate additional features and increase prospective student engagement.\n' +
+        'Currently working with Python and data science libraries (numpy, pandas, sklearn) to develop AI models for gleaning program development insights.'
+    },
     {
       title: 'Software Engineer Intern',
       company: 'Nucsoft Ltd',
