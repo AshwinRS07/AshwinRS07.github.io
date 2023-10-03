@@ -78,7 +78,7 @@ export default function Projects() {
               </p>
               <ButtonLink
                 text='Visit Campus Job Portal'
-                href='https://github.com/AshwinRS07/CampusJobPortal'
+                href='http://hdl.handle.net/10919/113750'
               />
             </div>
             <div className='md:absolute md:top-4 md:right-[-200px] md:w-[800px]'>
