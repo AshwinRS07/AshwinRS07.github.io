@@ -46,7 +46,7 @@ export default function About({ workTimeline }) {
             src="https://res.cloudinary.com/dmltcfxo4/image/upload/v1696295617/Leetcode_SS_cjtxv9.png"
             placeholder="blur"
             blurDataURL="https://res.cloudinary.com/dmltcfxo4/image/upload/v1696295617/Leetcode_SS_cjtxv9.png"
-            width={300}
+            width={450}
             height={150}
             alt={'Leetcode_stats'}
           />
