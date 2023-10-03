@@ -42,7 +42,7 @@ export default function About({ workTimeline }) {
       <p>
       <div className="hidden md:block md:float-left">
           <Image
-            className="md:mr-8"
+            className="md:mr-8 object-scale-down"
             src="https://res.cloudinary.com/dmltcfxo4/image/upload/v1696295617/Leetcode_SS_cjtxv9.png"
             placeholder="blur"
             blurDataURL="https://res.cloudinary.com/dmltcfxo4/image/upload/v1696295617/Leetcode_SS_cjtxv9.png"
