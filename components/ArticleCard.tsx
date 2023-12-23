@@ -23,7 +23,7 @@ export function ArticleCard({ article }: Props) {
             src={article.coverImage}
             placeholder="blur"
             blurDataURL={article.coverImage}
-            width={400}
+            // width={400}
             height={300}
             layout="intrinsic"
             alt={'article cover'}
