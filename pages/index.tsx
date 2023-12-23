@@ -10,14 +10,15 @@ import { Subscribe } from '@/components/Subscribe';
 import siteMetadata from '@/data/siteMetadata';
 import { useRouter } from 'next/router';
 import avatarImage from 'public/images/avatar.png';
-import image1 from 'public/images/Campus_Job_Portal_logo.png'
-import image2 from 'public/images/bookstore-logo.6edc632b.png'
-import image3 from 'public/images/5_basic_angular_testing_tips_banner.jpg'
-
+import image1 from 'public/images/Campus_Job_Portal_logo.png';
+import image2 from 'public/images/bookstore-logo.6edc632b.png';
+import image3 from 'public/images/5_basic_angular_testing_tips_banner.jpg';
 
 export default function Home({ recentArticles }) {
   const { push } = useRouter();
-  {/*Change Cover images?*/}
+  {
+    /*Change Cover images?*/
+  }
   recentArticles = [
     {
       title: 'Campus Job Portal',
@@ -33,8 +34,8 @@ export default function Home({ recentArticles }) {
       title: 'Movie Ticket Reservation',
       coverImage: image3,
       publishedDate: 'May 2019'
-    },
-  ]
+    }
+  ];
   return (
     <Container>
       <div>
@@ -43,13 +44,16 @@ export default function Home({ recentArticles }) {
             <h1 className="order-2 col-span-5 text-4xl leading-tight md:leading-normal md:order-1 sm:text-5xl">
               I'm{' '}
               <span className="text-teal-500 dark:text-teal-400">Ashwin</span>.
-              A curious software engineer with expertise in Python and Java {/*Possibly Change?*/}
+              A Curiousity-Drive Software Engineer. <br />
+              Tech: Python, Java & Machine Learning {/*Possibly Change?*/}
             </h1>
-            <div className="order-1 md:order-2"> {/*Change size?*/}
+            <div className="order-1 md:order-2">
+              {' '}
+              {/*Change size?*/}
               <Image
                 alt="Ashwin Shenolikar"
-                height={180}
-                width={180}
+                height={200}
+                width={200}
                 src={avatarImage}
                 placeholder="blur"
                 blurDataURL={siteMetadata.avatarImage}
@@ -59,12 +63,12 @@ export default function Home({ recentArticles }) {
             </div>
           </div>
           <div className="space-y-6 text-center md:text-left md:space-y-0 md:space-x-4">
-            <Button
+            {/* <Button
               buttonType={ButtonType.PRIMARY}
               onButtonClick={() => push('/projects')}
             >
-              Check out my projects {/*Change to something nicer*/}
-            </Button>
+              Some projects of mine // Change to something nicer
+             </Button> */}
             <Button
               buttonType={ButtonType.SECONDARY}
               onButtonClick={() => push('/about')}
@@ -75,7 +79,8 @@ export default function Home({ recentArticles }) {
         </div>
         <hr className="hr"></hr>
         <div>
-          <h2>I love to apply my knowledge through creating applications.</h2> {/*Something more attractive?*/}
+          <h2>I love to apply my knowledge through creating applications.</h2>{' '}
+          {/*Something more attractive?*/}
           <p>Check out a few of my most recent projects.</p>
           <ArticleList articles={recentArticles} />
           <div className="my-16">
