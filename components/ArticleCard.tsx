@@ -19,11 +19,11 @@ export function ArticleCard({ article }: Props) {
         <div className="group">
           <Image
             className="rounded-3xl group-hover:opacity-75"
-            objectFit="cover"
+            objectFit="fill"
             src={article.coverImage}
             placeholder="blur"
             blurDataURL={article.coverImage}
-            // width={400}
+            width={400}
             height={300}
             layout="intrinsic"
             alt={'article cover'}

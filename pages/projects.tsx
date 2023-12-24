@@ -1,7 +1,8 @@
 import { Ad } from '@/components/Ad';
 import { Container } from 'layouts/Container';
 import Image from 'next/legacy/image';
-{/*
+{
+  /*
 Project List:
 
 Software Development:
@@ -19,31 +20,32 @@ Music Genre Classification -- Hosted
 Vehicle Classification/Numberplate Detection -- Hosted
 EV Charging/Parking Garage location analysis -- Hosted
 
-*/}
+*/
+}
 function ButtonLink({ text, href }) {
   return (
     <a
       href={href}
-      target='_blank'
-      rel='noreferrer'
+      target="_blank"
+      rel="noreferrer"
       className={`group inline-flex items-center rounded-full px-6 py-1.5 font-semibold transitionbg-midnight text-white dark:bg-gray-200 dark:text-midnight hover:bg-slate-700 bg-midnight no-underline`}
     >
       {text}
       <svg
         className={`mt-0.5 ml-2 -mr-1 stroke-2 stroke-white dark:stroke-midnight`}
-        fill='none'
-        width='10'
-        height='10'
-        viewBox='0 0 10 10'
-        aria-hidden='true'
+        fill="none"
+        width="10"
+        height="10"
+        viewBox="0 0 10 10"
+        aria-hidden="true"
       >
         <path
-          className='transition opacity-0 group-hover:opacity-100'
-          d='M0 5h7'
+          className="transition opacity-0 group-hover:opacity-100"
+          d="M0 5h7"
         ></path>
         <path
-          className='transition group-hover:translate-x-[3px]'
-          d='M1 1l4 4-4 4'
+          className="transition group-hover:translate-x-[3px]"
+          d="M1 1l4 4-4 4"
         ></path>
       </svg>
     </a>
@@ -52,44 +54,44 @@ function ButtonLink({ text, href }) {
 
 export default function Projects() {
   return (
-    <Container title='Projects - Ashwin Shenolikar'>
+    <Container title="Projects - Ashwin Shenolikar">
       <h1>
-        <span
-          className='block text-base font-semibold tracking-wide text-center text-indigo-500 uppercase dark:text-teal-400'>
+        <span className="block text-base font-semibold tracking-wide text-center text-indigo-500 uppercase dark:text-teal-400">
           Projects
         </span>
-        <span className='block max-w-2xl mx-auto mt-2 text-4xl font-bold leading-10 text-center sm:text-5xl'>
+        <span className="block max-w-2xl mx-auto mt-2 text-4xl font-bold leading-10 text-center sm:text-5xl">
           A selection of my favorite works.
         </span>
       </h1>
 
-      <div className='space-y-12'>
-        <div
-          className='relative w-full overflow-hidden border rounded-3xl bg-gradient-to-b from-slate-50 dark:from-slate-800 dark:to-indigo-900 to-indigo-200 dark:border-slate-700 border-slate-100'>
-          <div
-            className='w-full h-[1px] bg-gradient-to-r from-transparent via-indigo-300 dark:via-indigo-600 to-transparent'></div>
-          <div className='grid grid-cols-1 min-h-[500px] md:grid-cols-2'>
-            <div className='self-end col-span-1 m-8 text-center md:text-left'>
-              <h2 className='mt-0'>Campus Job Portal</h2>
+      {/* Campus Job Portal */}
+
+      <div className="space-y-12">
+        <div className="relative w-full overflow-hidden border rounded-3xl bg-gradient-to-b from-slate-50 dark:from-slate-800 dark:to-indigo-900 to-indigo-200 dark:border-slate-700 border-slate-100">
+          <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-indigo-300 dark:via-indigo-600 to-transparent"></div>
+          <div className="grid grid-cols-1 min-h-[300px] md:grid-cols-2">
+            <div className="self-end col-span-1 m-8 text-center md:text-left">
+              <h2 className="mt-0">Campus Job Portal</h2>
               <p>
-                Developed a networking and job portal for Virginia Tech, connecting students, professors, and staff;
-                consisting of 16 RESTful
-                API calls made in the backend in a 5-person collaboration.
+                Developed a networking and job portal for Virginia Tech,
+                connecting students, professors, and staff; consisting of 16
+                RESTful API calls made in the backend in a 5-person
+                collaboration.
               </p>
               <ButtonLink
-                text='Visit Campus Job Portal'
-                href='http://hdl.handle.net/10919/113750'
+                text="Visit Campus Job Portal"
+                href="http://hdl.handle.net/10919/113750"
               />
             </div>
-            <div className='md:absolute md:top-4 md:right-[-200px] md:w-[800px]'>
+            <div className="md:absolute md:top-4 md:right-[-450px] md:w-[800px]">
               <Image
-                objectFit='contain'
-                src='https://res.cloudinary.com/dmltcfxo4/image/upload/v1686260020/Campus_Job_Portal_logo_i1xurd.png'
-                placeholder='blur'
-                blurDataURL='https://res.cloudinary.com/dmltcfxo4/image/upload/v1686260020/Campus_Job_Portal_logo_i1xurd.png'
-                width={500}
-                height={500}
-                layout='intrinsic'
+                objectFit="contain"
+                src="https://res.cloudinary.com/dmltcfxo4/image/upload/v1686260020/Campus_Job_Portal_logo_i1xurd.png"
+                placeholder="blur"
+                blurDataURL="https://res.cloudinary.com/dmltcfxo4/image/upload/v1686260020/Campus_Job_Portal_logo_i1xurd.png"
+                width={300}
+                height={300}
+                layout="intrinsic"
                 alt={'Campus Job Portal'}
               />
             </div>
@@ -103,33 +105,34 @@ export default function Projects() {
         {/*  <Ad />*/}
         {/*</div>*/}
 
-        <div
-          className='relative w-full overflow-hidden border rounded-3xl bg-gradient-to-b from-purple-50 dark:from-purple-900/50 dark:to-fuchsia-700 to-fuchsia-300 dark:border-slate-700 border-slate-100'>
-          <div
-            className='w-full h-[1px] bg-gradient-to-r from-transparent via-fuchsia-300 dark:via-fuchsia-600 to-transparent'></div>
-          <div className='grid grid-cols-1 min-h-[500px] max-h-[500px] md:grid-cols-2'>
-            <div className='md:w-[650px] max-h-[500px]'>
-              <Image
-                className='absolute bottom-20 md:bottom-0 md:-left-16'
-                objectFit='scale-down'
-                src='https://res.cloudinary.com/dmltcfxo4/image/upload/v1686260039/bookstore-logo.6edc632b_zvdrsi.png'
-                placeholder='blur'
-                blurDataURL='https://res.cloudinary.com/dmltcfxo4/image/upload/v1686260039/bookstore-logo.6edc632b_zvdrsi.png'
-                width={500}
-                height={500}
-                layout='intrinsic'
-                alt={'Online Bookstore Logo'}
-              />
-            </div>
-            <div className='self-end order-first col-span-1 m-8 text-center md:order-last md:text-left'>
-              <h2 className='mt-0'>Online Bookstore Web Application</h2>
+        {/* Online Bookstore */}
+
+        <div className="relative w-full overflow-hidden border rounded-3xl bg-gradient-to-b from-purple-50 dark:from-purple-900/50 dark:to-fuchsia-700 to-fuchsia-300 dark:border-slate-700 border-slate-100">
+          <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-fuchsia-300 dark:via-fuchsia-600 to-transparent"></div>
+          <div className="grid grid-cols-1 min-h-[300px] max-h-[500px] md:grid-cols-2">
+            <div className="self-end col-span-1 m-8 text-center md:text-left">
+              <h2 className="mt-0">Online Bookstore Web Application</h2>
               <p>
-                Designed and coded an online bookstore, where users to order books from a multi-genre catalog,
-                with a functional shopping cart, with 12 REST APIs and 5+ backend packages.
+                Designed and coded an online bookstore, where users to order
+                books from a multi-genre catalog, with a functional shopping
+                cart, with 12 REST APIs and 5+ backend packages.
               </p>
               <ButtonLink
-                text='Visit Bookhub!'
-                href='https://github.com/AshwinRS07/OnlineBookstore'
+                text="Visit Bookhub!"
+                href="https://github.com/AshwinRS07/OnlineBookstore"
+              />
+            </div>
+            <div className="md:w-[900px] max-h-[700px]">
+              <Image
+                className="md:absolute"
+                objectFit="scale-down"
+                src="https://res.cloudinary.com/dmltcfxo4/image/upload/v1686260039/bookstore-logo.6edc632b_zvdrsi.png"
+                placeholder="blur"
+                blurDataURL="https://res.cloudinary.com/dmltcfxo4/image/upload/v1686260039/bookstore-logo.6edc632b_zvdrsi.png"
+                width={300}
+                height={300}
+                layout="intrinsic"
+                alt={'Online Bookstore Logo'}
               />
             </div>
           </div>
@@ -138,20 +141,55 @@ export default function Projects() {
         <br />
         <br />
 
-        <div
-          className='relative w-full overflow-hidden border rounded-3xl bg-gradient-to-b from-slate-50 dark:from-slate-800 dark:to-blue-900 to-blue-300 dark:border-slate-700 border-slate-100'>
-          <div
-            className='w-full h-[1px] bg-gradient-to-r from-transparent via-blue-300 dark:via-blue-600 to-transparent'></div>
-          <div className='grid grid-cols-1 min-h-[500px] md:grid-cols-2'>
-            <div className='self-end col-span-1 m-8 text-center md:text-left'>
-              <h2 className='mt-0'>Movie Ticket Reservation System</h2>
+        {/* Meshmerize */}
+        <div className="relative w-full overflow-hidden border rounded-3xl bg-gradient-to-b from-purple-50 dark:from-purple-900/50 dark:to-fuchsia-700 to-fuchsia-300 dark:border-slate-700 border-slate-100">
+          <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-fuchsia-300 dark:via-fuchsia-600 to-transparent"></div>
+          <div className="grid min-h-[300px] max-h-[500px] md:grid-cols-2">
+            <div className="self-end col-span-1 m-8 text-center md:text-left">
+              <h2 className="mt-0">Maze Solving Bot</h2>
               <p>
-                Formulated and developed a Java AWT application with MySQL Database, incorporating a Singleton
-                pattern and Factory pattern using agile methodology.
+                Created a robot powered with an Arduino NANO unit which can
+                traverse a maze randomly, and then use an optimization algorithm
+                to remember and traverse the best path from the first run on a
+                second run
+              </p>
+              {/*Upload BookHub to GitHub*/}
+              <ButtonLink
+                text="Visit Meshmerize!"
+                href="https://github.com/AshwinRS07/Meshmerize"
+              />
+            </div>
+            <div className="md:w-[650px] max-h-[300px]">
+              <Image
+                className="absolute bottom-20 md:bottom-0 md:-left-16"
+                objectFit="scale-down"
+                src="https://res.cloudinary.com/dmltcfxo4/image/upload/v1686335163/Meshmerize_squared_bt99o3.jpg"
+                placeholder="blur"
+                blurDataURL="https://res.cloudinary.com/dmltcfxo4/image/upload/v1686335163/Meshmerize_squared_bt99o3.jpg"
+                width={280}
+                height={280}
+                layout="intrinsic"
+                alt={'Robot Image'}
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Movie Ticket Reservation */}
+
+        <div className="relative w-full overflow-hidden border rounded-3xl bg-gradient-to-b from-slate-50 dark:from-slate-800 dark:to-blue-900 to-blue-300 dark:border-slate-700 border-slate-100">
+          <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-blue-300 dark:via-blue-600 to-transparent"></div>
+          <div className="grid grid-cols-1 min-h-[300px] md:grid-cols-2">
+            <div className="self-end col-span-1 m-8 text-center md:text-left">
+              <h2 className="mt-0">Movie Ticket Reservation System</h2>
+              <p>
+                Formulated and developed a Java AWT application with MySQL
+                Database, incorporating a Singleton pattern and Factory pattern
+                using agile methodology.
               </p>
               <ButtonLink
-                text='Visit APSIT Theatre!'
-                href='https://github.com/AshwinRS07/Projects'
+                text="Visit APSIT Theatre!"
+                href="https://github.com/AshwinRS07/Projects"
               />
             </div>
             {/*<div className='md:absolute md:top-4 md:right-[-200px] md:w-[800px]'>*/}
@@ -172,40 +210,37 @@ export default function Projects() {
         <br />
         <br />
 
-        {/* Add A New Project*/}
-        <div
-          className='relative w-full overflow-hidden border rounded-3xl bg-gradient-to-b from-purple-50 dark:from-purple-900/50 dark:to-fuchsia-700 to-fuchsia-300 dark:border-slate-700 border-slate-100'>
-          <div
-            className='w-full h-[1px] bg-gradient-to-r from-transparent via-fuchsia-300 dark:via-fuchsia-600 to-transparent'></div>
-          <div className='grid grid-cols-1 min-h-[500px] max-h-[500px] md:grid-cols-2'>
-            <div className='md:w-[650px] max-h-[500px]'>
+        {/* Code Comment Generation */}
+        <div className="relative w-full overflow-hidden border rounded-3xl bg-gradient-to-b from-purple-50 dark:from-purple-900/50 dark:to-fuchsia-700 to-fuchsia-300 dark:border-slate-700 border-slate-100">
+          <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-fuchsia-300 dark:via-fuchsia-600 to-transparent"></div>
+          <div className="grid grid-cols-1 min-h-[300px] max-h-[500px] md:grid-cols-2">
+            {/* <div className="md:w-[650px] max-h-[500px]">
               <Image
-                className='absolute bottom-20 md:bottom-0 md:-left-16'
-                objectFit='scale-down'
-                src='https://res.cloudinary.com/dmltcfxo4/image/upload/v1686335163/Meshmerize_squared_bt99o3.jpg'
-                placeholder='blur'
-                blurDataURL='https://res.cloudinary.com/dmltcfxo4/image/upload/v1686335163/Meshmerize_squared_bt99o3.jpg'
+                className="absolute bottom-20 md:bottom-0 md:-left-16"
+                objectFit="scale-down"
+                src="https://res.cloudinary.com/dmltcfxo4/image/upload/v1686335163/Meshmerize_squared_bt99o3.jpg"
+                placeholder="blur"
+                blurDataURL="https://res.cloudinary.com/dmltcfxo4/image/upload/v1686335163/Meshmerize_squared_bt99o3.jpg"
                 width={500}
                 height={500}
-                layout='intrinsic'
+                layout="intrinsic"
                 alt={'Robot Image'}
               />
-            </div>
-            <div className='self-end order-first col-span-1 m-8 text-center md:order-last md:text-left'>
-              <h2 className='mt-0'>Maze Solving Bot</h2>
+            </div> */}
+            <div className="self-end order-first col-span-1 m-8 text-center md:order-last md:text-left">
+              <h2 className="mt-0">Code Summary Generator</h2>
               <p>
-                Created a robot powered with an Arduino NANO unit which can traverse a maze randomly, and then use an
-                optimization algorithm to remember and traverse the best path from the first run on a second run
+                A Deep-Learning agent powered by state-of-the-art Transformer
+                CodeBERT - which can read Java code and generate comments
+                explaining its logic!
               </p>
-              {/*Upload BookHub to GitHub*/}
               <ButtonLink
-                text='Visit Meshmerize!'
-                href='https://github.com/AshwinRS07/Meshmerize'
+                text="Check it out->"
+                href="https://github.com/AshwinRS07/CodeSummarization"
               />
             </div>
           </div>
         </div>
-
       </div>
     </Container>
   );

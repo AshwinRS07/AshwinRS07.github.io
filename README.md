@@ -1,4 +1,4 @@
-[//]: # (![A preview of my revamped blogfolio]&#40;https://res.cloudinary.com/braydoncoyer/image/upload/v1639000556/new_blogfolio_igoj09.png&#41;)
+[//]: # '![A preview of my revamped blogfolio]('
 
 # Ashwin Shenolikar
 
