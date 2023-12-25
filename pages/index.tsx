@@ -70,7 +70,7 @@ export default function Home({ recentArticles }) {
               Some projects of mine // Change to something nicer
              </Button> */}
             <Button
-              buttonType={ButtonType.PRIMARY}
+              buttonType={ButtonType.SECONDARY}
               onButtonClick={() => push('/about')}
             >
               More about me
