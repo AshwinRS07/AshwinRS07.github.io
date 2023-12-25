@@ -44,7 +44,7 @@ export default function Home({ recentArticles }) {
             <h1 className="order-2 col-span-5 text-4xl leading-tight md:leading-normal md:order-1 sm:text-5xl">
               I'm{' '}
               <span className="text-teal-500 dark:text-teal-400">Ashwin</span>.
-              A Curiousity-Drive Software Engineer. <br />
+              A Curiousity-Driven Software Engineer. <br />
               Tech: Python, Java & Machine Learning {/*Possibly Change?*/}
             </h1>
             <div className="order-1 md:order-2">
