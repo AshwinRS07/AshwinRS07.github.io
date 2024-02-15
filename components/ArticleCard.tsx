@@ -1,6 +1,6 @@
 import { Article } from '@/lib/types';
 import Image from 'next/legacy/image';
-import { handleArticleClicked } from '@/lib/handleArticleClick';
+// import { handleArticleClicked } from '@/lib/handleArticleClick';
 import siteMetadata from '@/data/siteMetadata';
 import slugify from 'slugify';
 import { useIsArticleRead } from '@/hooks/useIsArticleRead';
@@ -15,7 +15,7 @@ export function ArticleCard({ article }: Props) {
 
   return (
     <div>
-      <button onClick={() => handleArticleClicked(slug)}>
+      <button>
         <div className="group">
           <Image
             className="rounded-3xl group-hover:opacity-75"
