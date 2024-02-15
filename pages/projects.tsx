@@ -153,7 +153,6 @@ export default function Projects() {
                 to remember and traverse the best path from the first run on a
                 second run
               </p>
-              {/*Upload BookHub to GitHub*/}
               <ButtonLink
                 text="Visit Meshmerize!"
                 href="https://github.com/AshwinRS07/Meshmerize"

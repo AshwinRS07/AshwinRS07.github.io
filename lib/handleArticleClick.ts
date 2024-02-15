@@ -9,5 +9,5 @@ export function handleArticleClicked(slug) {
     );
   }
 
-  router.push(`/blog/${slug}`);
+  router.push(`/${slug}`);
 }
