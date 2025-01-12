@@ -15,48 +15,46 @@ export function ArticleCard({ article }: Props) {
 
   return (
     <div>
-      <button>
-        <div className="group">
-          <Image
-            className="rounded-3xl group-hover:opacity-75"
-            objectFit="fill"
-            src={article.coverImage}
-            placeholder="blur"
-            blurDataURL={article.coverImage}
-            width={400}
-            height={300}
-            layout="intrinsic"
-            alt={'article cover'}
-          />
-          <div className="w-full text-left">
-            <h3 className="mt-2 text-2xl">{article.title}</h3>
-            <span className="flex items-center text-base font-semibold">
-              {new Date(article.publishedDate).toLocaleDateString(
-                siteMetadata.locale,
-                {
-                  year: 'numeric',
-                  month: 'long',
-                  day: 'numeric'
-                }
-              )}{' '}
-              {hasRead && (
-                <span className="inline-flex items-center ml-3 text-sm text-teal-600 opacity-75 dark:text-teal-800">
-                  <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="1.5"
-                      d="M5.75 12.8665L8.33995 16.4138C9.15171 17.5256 10.8179 17.504 11.6006 16.3715L18.25 6.75"
-                    ></path>
-                  </svg>
-                  <span>read</span>
-                </span>
-              )}
-            </span>
-          </div>
+      <div className="group">
+        <Image
+          className="rounded-3xl group-hover:opacity-75"
+          objectFit="fill"
+          src={article.coverImage}
+          placeholder="blur"
+          blurDataURL={article.coverImage}
+          width={400}
+          height={300}
+          layout="intrinsic"
+          alt={'article cover'}
+        />
+        <div className="w-full text-left">
+          <h3 className="mt-2 text-2xl">{article.title}</h3>
+          <span className="flex items-center text-base font-semibold">
+            {new Date(article.publishedDate).toLocaleDateString(
+              siteMetadata.locale,
+              {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+              }
+            )}{' '}
+            {hasRead && (
+              <span className="inline-flex items-center ml-3 text-sm text-teal-600 opacity-75 dark:text-teal-800">
+                <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    d="M5.75 12.8665L8.33995 16.4138C9.15171 17.5256 10.8179 17.504 11.6006 16.3715L18.25 6.75"
+                  ></path>
+                </svg>
+                <span>read</span>
+              </span>
+            )}
+          </span>
         </div>
-      </button>
+      </div>
     </div>
   );
 }

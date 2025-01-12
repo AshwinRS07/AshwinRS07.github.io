@@ -34,11 +34,13 @@ export default function About({ workTimeline }) {
         do my own high standard of product quality.
       </p>
       <p>
-        As of now, I am volunteering as an Application Developer at Virginia
-        Tech, while I search for my first big role! Feel free to reach out with
-        any opportunities you're aware of by the way :D. Simultaneously, I am
-        developing personal projects ranging from Web products to 2D game dev,
-        and contributing to open source repositories when I can!
+        As of now, I am a Software Developer at George Mason University! It's
+        been an absolute wild ride so far full of learning and some surprises.
+        Simultaneously, I am developing personal projects ranging from Web
+        products to 2D game dev, and contributing to open source repositories
+        when I can! The screenshot below is a crowning accomplishment of my job
+        searching days before- full of intensely productive days(to put it in a
+        nice way).
       </p>
       <p>
         <div className="hidden md:block md:float-left">
@@ -175,12 +177,22 @@ export default function About({ workTimeline }) {
 export const getStaticProps: GetStaticProps = async () => {
   const workTimeline = [
     {
-      title: 'Application Developer',
-      company: 'Virginia Tech',
-      company_url: 'https://www.ise.vt.edu/',
+      title: 'Software Developer',
+      company: 'George Mason University',
+      company_url: 'https://bruise.gmu.edu/',
       duration: 'Presently Working',
       description:
-        "I work to maintain and enhance the VT ISE department's website using the latest technologies to integrate additional features and increase prospective student engagement.\n" +
+        "I lead the frontend side of the EAS-ID's Injury Documentation platform development efforts using Next.js and TailwindCSS. I also work with the middleware in Golang\n" +
+        "and defining data ontologies to be used across the project's scope"
+    },
+    {
+      title: 'Software Engineer',
+      company: 'Virginia Tech',
+      company_url: '',
+      duration: '',
+      description:
+        "I researched methods to increase 5G network efficiency using deep reinforcement learning algorithms with OpenAI's Gymnasium and a 5G network simulator\n" +
+        "I enhanced the VT ISE department's website using the latest technologies to integrate additional features and increase prospective student engagement.\n" +
         'Currently working with Python and data science libraries (numpy, pandas, sklearn) to develop AI models for gleaning program development insights.'
     },
     {
