@@ -12,6 +12,9 @@
     "prepare": "husky install",
     "lint": "next lint"
   },
+  "engines": {
+    "node": "^20.19.4 || 22.9.0"
+  },
   "dependencies": {
     "@headlessui/react": "^1.4.1",
     "@microlink/mql": "^0.10.31",
@@ -24,7 +27,6 @@
     "next": "^15.4.1",
     "next-plausible": "^3.0.0",
     "next-themes": "0.0.15",
-    "node": "^20.19.4 || 22.9.0",
     "preact": "^10.6.4",
     "prism-react-renderer": "^1.2.1",
     "puppeteer": "^19.3.0",
