@@ -1,6 +1,6 @@
 import siteMetadata from '@/data/siteMetadata';
-import linkedIcon from 'public/images/linkedin.png'
-import githubIcon from 'public/images/github.png'
+import linkedIcon from 'public/images/linkedin.png';
+import githubIcon from 'public/images/github.png';
 import Image from 'next/legacy/image';
 
 const navigation = {
@@ -47,32 +47,31 @@ export function Footer() {
     <>
       <footer>
         <hr />
-        <div className='flex items-center justify-between mb-20'>
-          <div role='list' className='mt-4 space-y-4'>
+        <div className="flex items-center justify-between mb-20">
+          <div role="list" className="mt-4 space-y-4">
             {navigation.general.map((item) => (
               <a
-                target='_blank'
+                target="_blank"
                 key={item.name}
                 href={item.href}
-                className='block text-base text-gray-600 no-underline cursor-pointer hover:text-gray-800 dark:hover:text-gray-300 dark:text-gray-400 hover:underline'
-                rel='noreferrer'
+                className="block text-base text-gray-600 no-underline cursor-pointer hover:text-gray-800 dark:hover:text-gray-300 dark:text-gray-400 hover:underline"
+                rel="noreferrer"
               >
-                      <span
-                        className='block text-base text-gray-600 no-underline cursor-pointer hover:text-gray-800 dark:hover:text-gray-300 dark:text-gray-400 hover:underline'>
-                        {item.name}
-                      </span>
+                <span className="block text-base text-gray-600 no-underline cursor-pointer hover:text-gray-800 dark:hover:text-gray-300 dark:text-gray-400 hover:underline">
+                  {item.name}
+                </span>
               </a>
             ))}
           </div>
-          <div className='flex items-center justify-between mt-12'>
-            <div className='flex items-center order-2 space-x-6'>
+          <div className="flex items-center justify-between mt-12">
+            <div className="flex items-center order-2 space-x-6">
               {navigation.social.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className='text-gray-600 dark:text-gray-400 important'
+                  className="text-gray-600 dark:text-gray-400 important"
                 >
-                  <span className='sr-only'>{item.name}</span>
+                  <span className="sr-only">{item.name}</span>
                   <Image
                     alt="Ashwin"
                     height={50}
@@ -91,7 +90,6 @@ export function Footer() {
             {/*</p>*/}
           </div>
         </div>
-
       </footer>
     </>
   );

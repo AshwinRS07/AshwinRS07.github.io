@@ -13,7 +13,11 @@ export function ShareArticle({ slug, title }: Props) {
   const pubilcUrl = getArticlePublicUrl(slug);
   return (
     <div className="flex items-center justify-center m-0 space-x-3">
-      <TwitterShareButton url={pubilcUrl} title={title} via={'AshwinShenolikar'}>
+      <TwitterShareButton
+        url={pubilcUrl}
+        title={title}
+        via={'AshwinShenolikar'}
+      >
         <svg
           className="w-9 h-9 md:w-6 md:h-6 hover:rotate-[-4deg]"
           viewBox="0 0 24 24"
